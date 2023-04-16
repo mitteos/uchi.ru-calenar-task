@@ -14,5 +14,5 @@ export const SelectDate: React.FC<{}> = () => {
 
 const Container = styled.div`
   background: #F6F6F6;
-  padding: 10px 0 10px 60px;
+  padding: 10px 0 10px 70px;
 `

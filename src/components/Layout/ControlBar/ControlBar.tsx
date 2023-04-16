@@ -47,6 +47,9 @@ const Container = styled.div`
   transform: translateX(-50%);
   max-width: 740px;
   margin: 0 auto;
+  @media (max-width: 450px) {
+    padding: 15px 40px;
+  }
 `
 const TodayBtn = styled.button`
   border: none;
@@ -54,6 +57,12 @@ const TodayBtn = styled.button`
   font-size: 26px;
   color: #FF3131;
   cursor: pointer;
+  @media (max-width: 550px) {
+    font-size: 22px;
+  }
+  @media (max-width: 450px) {
+    font-size: 18px;
+  }
 `
 const DeleteBtn = styled(TodayBtn)<{isActive: boolean}>`
   display: ${({isActive}) => isActive ? "block" : "none"};

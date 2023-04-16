@@ -56,7 +56,13 @@ const Container =styled.div`
   display: flex;
   flex: auto;
   padding: 300px 0 50px 0;
-  gap: 10px
+  gap: 10px;
+  @media (max-width: 550px) {
+    padding: 280px 0 50px 0;
+  }
+  @media (max-width: 450px) {
+    padding: 270px 0 50px 0;
+  }
 `
 const TimeContainer = styled.div`
   display: grid;
@@ -64,12 +70,16 @@ const TimeContainer = styled.div`
   grid-auto-rows: 60px;
   grid-gap: 1px;
   margin-top: -11px;
+  margin-left: 10px;
 `
 const TimeItem = styled.div`
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
   color: #C0C0C0;
+  @media (max-width: 450px) {
+    font-size: 18px;
+  }
 `
 const GridContainer = styled.div`
   background: #E6E6E6;

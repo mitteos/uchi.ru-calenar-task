@@ -39,6 +39,9 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 42px 45px;
   background: #fff;
+  @media (max-width: 450px) {
+    padding: 42px 20px;
+  }
 `
 const Title = styled.h1`
   font-weight: 400;
